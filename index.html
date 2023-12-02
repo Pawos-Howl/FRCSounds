@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+<title>FRC sounds</title>
+
+<!--template
+    <button onclick="playsound('static_audio_.wav')" class="button"></button>
+-->
+
+<button onclick="playsound('static_audio_abort.wav')" class="button">abort</button><br>
+<button onclick="playsound('static_audio_end.wav')" class="button">end</button><br>
+<button onclick="playsound('static_audio_match_result.wav')" class="button">results</button><br>
+<button onclick="playsound('static_audio_resume.wav')" class="button">matchResume</button><br>
+<button onclick="playsound('static_audio_start.wav')" class="button">start</button><br>
+<button onclick="playsound('static_audio_timeout_warning.wav')" class="button">timeoutWarning</button><br>
+<button onclick="playsound('static_audio_warning.wav')" class="button">horn</button>
+
+
+<script>
+    function playsound(sound){
+            var audio = new Audio(sound);
+            audio.play();
+        }
+</script>
